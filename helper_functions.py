@@ -78,3 +78,10 @@ def plot_decision_boundary(model: torch.nn.Module, X: torch.Tensor, y: torch.Ten
     plt.xlim(xx.min(), xx.max())
     plt.ylim(yy.min(), yy.max())
 
+def plot_classfication_data_V0(X):
+  """"
+  Plots the make_circle dataset,
+  First custom hf made by me a.k.a Manan!
+  """
+  plt.scatter(x=X[:,0],y=X[:,1],c=y,cmap=plt.cm.RdYlBu);
+
